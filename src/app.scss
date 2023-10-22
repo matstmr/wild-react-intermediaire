@@ -1,0 +1,64 @@
+$fontColorCategorie: rgba(0, 128, 0, 0.618);
+$backgroundCategorie: rgba(0, 128, 0, 0.222);
+
+html {
+    background-color: grey;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 275px;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 20px 50px 20px;
+    box-shadow: 3px 5px 5px 1px rgba(0,0,0,0.38);   
+}
+
+.card {
+    h3 {
+        font-size: 0.8em;
+        font-family: serif;
+
+        span {
+            text-transform: uppercase;
+            background-color: $backgroundCategorie;
+            color: $fontColorCategorie;
+            padding: 5px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+    p {
+        opacity: 0.5;
+    }
+
+    .menu {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        padding: 10px;
+        border: 1px solid grey;
+        border-radius: 10px;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5px;
+    }
+}
